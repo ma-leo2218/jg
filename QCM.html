@@ -5,227 +5,314 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+
+  
   <title>Framu-QCM</title> 
-</head>
-<body>
-  <center>
-    <h1><font face=""> <u>QCM: Framu, le meilleur site de ventre</u></h1> 
-  </center>
-    <h4>Vous voulez vous abonner afin de profiter pleinement des réductions sur nos articles? Pas besoin de payer ! Répondez simplement à ces questions sur notre site pour prouver que vous serez un client fidèle ! Bonne chance !</h4>
-<p style="color:red"> /En cas d'échec, attendez 48h avant de  retenter le QCM !/</p>
-<br>   
-<a href="index.html">Quitter le QCM</a> 
-<style>
-    body { font-family: Arial; padding: 20px; }
-    .correct { color: green; font-weight: bold; }
-    .incorrect { color: red; font-weight: bold; }
+  <style>
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f5f5f5, #e0e0e0);
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #c0392b;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/*Barre progression*/
+.progress-container {
+    width: 100%;
+    background: #ddd;
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+
+#progress-bar {
+    height: 15px;
+    width: 0%;
+    background: #c0392b;
+    border-radius: 20px;
+    transition: 0.4s;
+}
+
+/* Boutons */
+button {
+    background-color: #c0392b;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e74c3c;
+}
+
+.warning {
+    color: red;
+    font-weight: bold;
+}
 </style>
 </head>
+
 <body>
 
-<h2>QCM - Obtention Carte Fidélité</h2>
-<p style="color:red"> Une note minimal supérieur à 80% est attendu pour bénéficier de notre carte fidélité</p>
+<div class="container">
+
+<h1><u>QCM: Framu</u></h1>
+ <h4>Vous voulez vous abonner afin de profiter pleinement des réductions sur nos articles? Pas besoin de payer ! Répondez simplement à ces questions sur notre site pour prouver que vous serez un client fidèle ! Bonne chance !</h4>
+<p style="color:red"> /En cas d'échec, attendez 48h avant de  retenter le QCM !/</p>
+<br>   
+
+  
+
+
+
+
+
+
+  <!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Framu-QCM</title>
+
+<style>
+body {
+    font-family: Arial;
+    background: linear-gradient(135deg, #f5f5f5, #e0e0e0);
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #c0392b;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+button {
+    background-color: #c0392b;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+button:hover {
+    background-color: #e74c3c;
+}
+
+.warning {
+    color: red;
+    font-weight: bold;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1><u>QCM: Framu</u></h1>
+
+<h4>
+Vous voulez vous abonner afin de profiter pleinement des réductions sur nos articles?
+Pas besoin de payer ! Répondez simplement à ces questions !
+</h4>
+
+<p class="warning">/En cas d'échec, attendez 48h avant de retenter le QCM !/</p>
+
+<!-- QCM 1 -->
+<div class="card">
+<h4 style="color:darkred">! Le plus populaire !</h4>
+<h2>QCM - Carte Fidélité</h2>
+
 <form id="quizForm">
 
-    <p><strong>1. Par quel scientifique notre entreprise a-t-elle était créée ?</strong></p>
-    <input type="radio" name="q1" value="a"> Iros Retam<br>
-    <input type="radio" name="q1" value="b"> Framus Octopus<br>
-    <input type="radio" name="q1" value="c"> Jacky Debinouze<br>
+<p><strong>1. Par quel scientifique notre entreprise a-t-elle était créée ?</strong></p>
+<input type="radio" name="q1" value="a"> Iros Retam<br>
+<input type="radio" name="q1" value="b"> Framus Octopus<br>
+<input type="radio" name="q1" value="c"> Jacky Debinouze<br>
 
-    <p><strong>2. En quel année a t il était créé ?</strong></p>
-    <input type="radio" name="q2" value="a"> -152 <br>
-    <input type="radio" name="q2" value="b"> -63 <br>
-    <input type="radio" name="q2" value="c"> 41 <br>
-  
-  <p><strong>3. Sur quelle animal ont été testé nos produits ?</strong></p>  
-    <input type="radio" name="q3" value="a"> Des Araignées <br>
-    <input type="radio" name="q3" value="b"> Des Poissons-Chats<br>
-    <input type="radio" name="q3" value="c"> Des Cochons d'Indes<br>
-  
-  <p><strong>4. De quel plante végétal nos faux ventres sont en parti constitué ?</strong></p>
-    <input type="radio" name="q4" value="a"> D'Eucalyptus <br>
-    <input type="radio" name="q4" value="b"> De Pissenlit <br>
-    <input type="radio" name="q4" value="c"> De Plastique
-  <br>
-<br>
+<p><strong>2. En quel année a t il était créé ?</strong></p>
+<input type="radio" name="q2" value="a"> -152<br>
+<input type="radio" name="q2" value="b"> -63<br>
+<input type="radio" name="q2" value="c"> 41<br>
 
-    <button type="button" onclick="corriger()">Corriger</button>
+<p><strong>3. Sur quelle animal ont été testé nos produits ?</strong></p>
+<input type="radio" name="q3" value="a"> Des Araignées<br>
+<input type="radio" name="q3" value="b"> Des Poissons-Chats<br>
+<input type="radio" name="q3" value="c"> Des Cochons d'Indes<br>
 
+<p><strong>4. De quel plante végétal nos faux ventres sont en parti constitué ?</strong></p>
+<input type="radio" name="q4" value="a"> D'Eucalyptus<br>
+<input type="radio" name="q4" value="b"> De Pissenlit<br>
+<input type="radio" name="q4" value="c"> De Plastique<br><br>
+
+<button type="button" onclick="corriger()">Corriger</button>
 </form>
 
 <p id="resultat"></p>
+</div>
 
-<script>
-function corriger() {
-    let score = 0;
+<!-- QCM 2 -->
+<div class="card">
+<h2>QCM - Réduction 10%</h2>
 
-    let reponses = {
-        q1: "b",
-        q2: "b",
-        q3: "c",
-        q4: "a"
-    };
-
-    let form = document.forms["quizForm"];
-
-    for (let question in reponses) {
-        if (form[question].value === reponses[question]) {
-            score++;
-        }
-    }
-
-    let total = Object.keys(reponses).length;
-    document.getElementById("resultat").innerHTML =
-        "Votre score : " + score + " / " + total;
-}
-</script>
-<br>
-  <h2>QCM - Obtention d'une réduction de 10% sur vos prochaines courses</h2>
-  <p style="color:red">/Valable 1 fois tous les 3 mois/</p>
-  
-<p><strong>1-Le film "le premier homme sur la lune" de Neil Amstrong a utilisé nos produits.</strong></p>
-
+<p><strong>1- Le film "le premier homme sur la lune" de Neil Amstrong a utilisé nos produits.</strong></p>
 <button onclick="verifier(false)">Vrai</button>
 <button onclick="verifier(true)">Faux</button>
-
 <p id="result"></p>
 
-<script>
-
-let bonneReponse = true;
-
-function verifier(reponseUtilisateur){
-
-    if(reponseUtilisateur === bonneReponse){
-        document.getElementById("result").textContent = "Bien joué !";
-    }
-    else{
-        document.getElementById("result").textContent = "Perdu ! Le film qui les ont employés est  'L'Événement le plus important depuis que l'homme a marché sur la Lune', à savoir que le film de Neil Amstrong n'emploie aucunement des faux ventres.";
-    }
-}
-
-</script>
-  <p><strong>2- Il existe 200 teintes de couleur de peau différentes pour nos produits.</strong></p>
-  <button onclick="verifier2(false)">Vrai</button>
+<p><strong>2- Il existe 200 teintes de couleur de peau différentes pour nos produits.</strong></p>
+<button onclick="verifier2(false)">Vrai</button>
 <button onclick="verifier2(true)">Faux</button>
-
 <p id="r"></p>
 
-<script>
-
-let bonneReponse2 = true;
-
-function verifier2(reponseUtilisateur){
-
-    if(reponseUtilisateur === bonneReponse2){
-        document.getElementById("r").textContent = "C'était faux! Bien vu, il n'y a pour l'instant que 180 teintes !";
-    }
-    else{
-        document.getElementById("r").textContent = "Perdu ! Il existe 180 teintes de peau de couleurs et non 200.";
-    }
-}
-  </script>
-  
-  <p><strong>3- Tous nos articles contiennent du silicone. </strong> </p>
-  <button onclick="verifier3(false)">Vrai</button>
+<p><strong>3- Tous nos articles contiennent du silicone.</strong></p>
+<button onclick="verifier3(false)">Vrai</button>
 <button onclick="verifier3(true)">Faux</button>
-
 <p id="re"></p>
 
-<script>
-
-let bonneReponse3 = true;
-
-function verifier3(reponseUtilisateur){
-
-    if(reponseUtilisateur === bonneReponse3){
-        document.getElementById("re").textContent = "Oui ! Vous êtes doué !";
-    }
-    else{
-        document.getElementById("re").textContent = "Perdu ! seulement 1 article contient du silicone; le reste étant principalement constitué de coton.";
-    }
-}
-</script>
-  
-  <p><strong>4- Themison de Laodicée est un des 4 scientifiques ayant contribué à vérification de la sécurité des faux ventres. </strong> </p>
-  <button onclick="verifier4(true)">Vrai</button>
+<p><strong>4- Themison de Laodicée est un des 4 scientifiques ayant aprouvé la qualité des produits.</strong></p>
+<button onclick="verifier4(true)">Vrai</button>
 <button onclick="verifier4(false)">Faux</button>
-
 <p id="res"></p>
+</div>
 
-<script>
+<!-- QCM 3 -->
+<div class="card">
+<h2>QCM - Jeu</h2>
 
-let bonneReponse4 = true;
-
-function verifier4(reponseUtilisateur){
-
-    if(reponseUtilisateur === bonneReponse4){
-        document.getElementById("res").textContent = "Bonne réponse ! Quelle connaissance !";
-    }
-    else{
-        document.getElementById("res").textContent = "Perdu ! Il fait bel et bien parti de ces scientifiques sans qui ce site n'existerait pas.";
-    }
-}
-</script>
-<br>
-
-  <h2>QCM - Un petit jeu pour s'amuser !</h2>
-  <p>Voici un petit QCM un peu plus complexe qui vous permettera d'en savoir plus sur notre site. Amusez-vous bien ! </p>
-  
- <h3 style="font-family: 'Garamond', Garamond, sans-serif; color:red;" >
-   
-   !Ce QCM n'apporte aucun abonnement!</h3> 
-  
-  <p><strong>1- Combien de faux ventres notre site met-il en avant ?</strong></p>
-  <input type="text" id="rep2">
-<button onclick="verifier3()">Valider</button>
-
+<p><strong>1- Combien de faux ventres notre site met-il en avant ?</strong></p>
+<input type="text" id="rep2">
+<button onclick="verifierJeu1()">Valider</button>
 <p id="result3"></p>
 
-<script>
-
-function verifier3(){
-
-    let r = document.getElementById("rep2").value;
- if(r == "5"){
-        document.getElementById("result3").textContent = "Correct !";
-    }
-    else{
-        document.getElementById("result3").textContent = "Incorrect. Réessayez !";
-    }
-}
-</script>
-
-    <p><strong>2- Qui est la femme à l'origine de la création des faux ventres ?</strong></p>
-  <p> => <u>seul le nom suffit</u></p>
-    <input type="text" id="rep3">
-<button onclick="v()">Valider</button>
-
+<p><strong>2- Qui est la femme à l'origine de la création des faux ventres ?</strong></p>
+<input type="text" id="rep3">
+<button onclick="verifierJeu2()">Valider</button>
 <p id="result4"></p>
-
-<script>
-
-function v(){
-
-let re= document.getElementById("rep3").value.trim();
-
-if(!isNaN(re)){
-    document.getElementById("result4").textContent = "Merci d'entrer un mot.";
-}
-else if(re == "Atia"){
-    document.getElementById("result4").textContent = "Correct !";
-}
-else{
-    document.getElementById("result4").textContent = "Incorrect. Réessayez.";
-}
-}
-</script>
-  
- <h3 style="font-family: 'Garamond', Garamond, sans-serif; color:red;" >
+   <h3 style="font-family: 'Garamond', Garamond, sans-serif; color:red;" >
    
    !En raison d'un problème technique, le QCM a été réduit à 2 questions au lieu de 5. Nous faisons de notre possible pour réintégrer les 3 dernières questions, en espérant que vous continuerez à soutenir ce site comme vous l'avez toujours fait. Merci de votre compréhension !</h3>   
+</div>
 
-  
+</div>
+
+   
+<!-- CONFETTIS -->
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+<script>
+function lancerConfettis() {
+    confetti({
+        particleCount: 120,
+        spread: 70,
+        origin: { y: 0.6 }
+    });
+}
+
+// QCM 1
+function corriger() {
+    let score = 0;
+    let reponses = { q1:"b", q2:"b", q3:"c", q4:"a" };
+
+    for (let q in reponses) {
+        let choix = document.querySelector('input[name="' + q + '"]:checked');
+        if (choix && choix.value === reponses[q]) score++;
+    }
+
+    let pourcentage = (score / 4) * 100;
+
+    let message = (pourcentage >= 80)
+        ? "Félicitations ! Carte obtenue !"
+        : "Échec... réessaie dans 48h";
+
+    document.getElementById("resultat").innerHTML =
+        "Score : " + pourcentage + "%<br>" + message;
+
+    if (pourcentage >= 80) lancerConfettis();
+}
+
+// QCM 2
+let bonneReponse = true;
+function verifier(r){
+    document.getElementById("result").textContent =
+        (r===bonneReponse) ? "Bien joué !" : "Perdu ! Cela dit, ce serait très marrant.";
+    if(r===bonneReponse) lancerConfettis();
+}
+
+let bonneReponse2 = true;
+function verifier2(r){
+    document.getElementById("r").textContent =
+        (r===bonneReponse2) ? "Bien vu !" : "Perdu ! Soyez plus attentif la prochaine fois !";
+    if(r===bonneReponse2) lancerConfettis();
+}
+
+let bonneReponse3 = true;
+function verifier3(r){
+    document.getElementById("re").textContent =
+        (r===bonneReponse3) ? "Correct !" : "Perdu !";
+    if(r===bonneReponse3) lancerConfettis();
+}
+
+let bonneReponse4 = true;
+function verifier4(r){
+    document.getElementById("res").textContent =
+        (r===bonneReponse4) ? "Bonne réponse !" : "Perdu !";
+    if(r===bonneReponse4) lancerConfettis();
+}
+
+// QCM 3
+function verifierJeu1(){
+    let r = document.getElementById("rep2").value;
+    document.getElementById("result3").textContent =
+        (r=="5") ? "Correct ! Vous êtes fort !" : "Incorrect.";
+    if(r=="5") lancerConfettis();
+}
+
+function verifierJeu2(){
+    let r = document.getElementById("rep3").value.trim();
+    document.getElementById("result4").textContent =
+        (r=="Atia") ? "Correct !" : "Incorrect.";
+    if(r=="Atia") lancerConfettis();
+}
+</script>
+
 </body>
+</html>
+
+  <a href="Framu.html">Quitter le QCM</a> 
 </body>
 </html>
